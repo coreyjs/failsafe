@@ -4,7 +4,7 @@ from failsafe.client import Client
 from failsafe.exceptions import AuthenticationError
 
 
-def service(api_key: str):
+def api_client(api_key: str):
     if api_key is None:
         raise AuthenticationError("Missing api_key")
 
